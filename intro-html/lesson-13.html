@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Flexbox</title>
+</head>
+<style>
+  .flex {
+    display: flex;
+
+  }
+
+  .el--1 {
+    width: 100px;
+    background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box {
+    background-color: black;
+    color: white;
+  }
+
+  .el--2 {
+    width: 200px;
+    background-color: lightblue;
+
+  }
+</style>
+
+<body>
+  <div class="flex">
+    <div class="el--1">
+      <div>
+        <p class="box">item1</p>
+      </div>
+    </div>
+    <div class="el--2">
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="box1"></div>
+    <div class="box2">
+      <div class="row1">row1</div>
+      <div class="box2-2">
+        <p class="row2">row2</p>
+        <p class="row2">row2</p>
+      </div>
+    </div>
+  </div>
+  <style>
+    .container {
+      display: flex;
+      margin-top: 50px;
+    }
+
+    .box1 {
+      background-color: lightpink;
+      width: 100px;
+    }
+
+    .box2 {
+      background-color: lightblue;
+
+      /* align-items: center; */
+      width: 200px;
+    }
+
+    .box2-2 {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .row2 {
+      margin-top: 0;
+      background-color: black;
+      color: white;
+    }
+  </style>
+</body>
+
+</html>

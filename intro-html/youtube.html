@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube.com Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .thumbnail {
+        width: 300px;
+        border-radius: 5px;
+      }
+      .thumbnail2 {
+        width: 150px;
+        height: 150px;
+      }
+      .thumbnail3 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      .search-bar {
+        font-size: 18px;
+        padding: 8px 13px;
+        border-radius: 8px;
+        color: #606060;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #606060;
+      }
+      .search-google {
+        font-family: Arial;
+        font-size: 14px;
+        padding: 8px 13px;
+        border: none;
+        box-shadow: 0px 1px 5px rgb(0 0 0 / 20%);
+        border-radius: 9px;
+        width: 450px;
+        margin-left: 30px;
+      }
+
+      .Email {
+        margin: 0;
+        font-size: 14px;
+        font-family: Tahoma;
+        margin: 0;
+        margin-bottom: 5px;
+        margin-top: 50px;
+        color: #606060;
+        padding: 0 10px;
+      }
+
+      .linkedin {
+        font-family: sans-serif;
+        font-size: 14px;
+        padding: 7px 13px;
+        width: 374px;
+
+        margin: 0;
+        margin-bottom: 20px;
+        color: #606060;
+        margin-left: 10px;
+      }
+
+      .agree {
+        font-size: 14px;
+        font-family: Verdana;
+        color: #606060;
+        margin: 0;
+        margin-bottom: 18px;
+        padding: 0 10px;
+      }
+
+      .btn-agree {
+        text-align: center;
+        border: none;
+        border-top: 5px solid rgb(86, 86, 255);
+        background-color: rgb(86, 86, 255);
+
+        color: white;
+        font-family: Arial;
+        font-size: 20px;
+        padding: 8px 0;
+        width: 100%;
+        cursor: pointer;
+        transition: background-color 0.5s, color 3s;
+      }
+      .btn-agree:hover {
+        color: rgb(86, 86, 255);
+        background-color: white;
+      }
+      .thumbnail-1 {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        vertical-align: middle;
+        object-fit: cover;
+      }
+      .text-box {
+        padding: 0px 8px;
+        vertical-align: middle;
+        font-size: 14px;
+        color: #606060;
+      }
+      .tweet {
+        font-size: 14px;
+        font-family: Arial;
+        font-weight: 600;
+        color: white;
+        background-color: rgb(86, 86, 255);
+        padding: 6px 13px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+    <img class="thumbnail2" src="thumbnails/thumbnail-1.webp" />
+    <img class="thumbnail3" src="thumbnails/thumbnail-1.webp" />
+    <input class="search-bar" type="text" placeholder="Search" />
+    <input
+      type="text"
+      class="search-google"
+      placeholder="Search Google or type a URL"
+    />
+    <div>
+      <div
+        style="
+          margin-top: 50px;
+          border: 5px solid rgb(86, 86, 255);
+          padding: 22px 0;
+          padding-bottom: 0;
+          display: inline-block;
+          margin-bottom: 30px;
+          position: relative;
+        "
+      >
+        <p class="Email">Email</p>
+        <input type="text" class="linkedin" />
+        <p class="agree">
+          By clicking Agree & John, you agree to the Privacy Policy.
+        </p>
+        <button class="btn-agree">Agree &#38; Join</button>
+        <div style="position: absolute; top: 10px; left: 10px">
+          <img src="thumbnails/thumbnail-1.webp" class="thumbnail-1" />
+          <span class="text-box">What's happening?</span>
+          <button class="tweet">Tweet</button>
+        </div>
+      </div>
+    </div>
+    <input
+      type="text"
+      placeholder="Name"
+      style="display: block; margin-bottom: 6px"
+    />
+    <input
+      type="text"
+      placeholder="Email"
+      style="display: block; margin-bottom: 50px"
+    />
+    <p style="width: 220px; display: inline-block; vertical-align: middle">
+      Thanks for chatting with our customer support. Would you like to take our
+      quick survey?
+    </p>
+    <button>Yes</button>
+    <button>No</button>
+  </body>
+</html>

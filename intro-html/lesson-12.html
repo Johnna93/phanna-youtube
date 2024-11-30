@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 12</title>
+</head>
+
+<body style="padding-bottom: 1000px;">
+  <div style="display: flex; flex-direction: row;">
+    <div style="background-color: lightblue; width: 200px;">200px</div>
+    <div style="background-color: lightpink; width: 75px;">75px</div>
+  </div>
+
+  <div style="display: flex; flex-direction: row; margin-top: 50px; ">
+    <div style="background-color: lightblue; width: 50px;">item1 </div>
+    <div style="background-color: lightpink; flex: 1;">item3 remaining space</div>
+    <div style="background-color: lightblue; width: 75px;">item3</div>
+  </div>
+
+  <div style="display: flex; flex-direction: row; margin-top: 50px; justify-content: space-evenly;">
+    <div style="background-color: lightpink;">item1</div>
+    <div style="background-color: lightpink;">item2</div>
+    <div style="background-color: lightpink;">item3</div>
+    <div style="background-color: lightpink;">item4</div>
+
+  </div>
+
+
+  <div
+    style="display: flex; flex-direction: row; height: 50px; margin-top: 50px; justify-content: space-between; border-style: solid; border-color: gray; border-width: 1px; align-items: center;">
+    <div style="background-color: lightpink;">item1</div>
+    <div style="background-color: lightpink; ">item2</div>
+  </div>
+
+  <h2>Challenge Exercises</h2>\
+  <h3>12e. Create design</h3>
+  <div class="container">
+    <div class="home">
+      <p>Home</p>
+      <p style="padding: 5px 12px; color: white; background-color: rgb(90, 90, 255); border-radius: 20px;">14</p>
+    </div>
+    <div class="home">
+      <p>Notifications</p>
+      <p style="padding: 5px 12px; color: white; background-color: rgb(90, 90, 255); border-radius: 20px;">3</p>
+    </div>
+    <div class="home">
+      <p>Messages</p>
+      <p style="padding: 5px 12px; color: white; background-color: rgb(90, 90, 255); border-radius: 20px;">5
+      </p>
+    </div>
+  </div>
+  <h3>12f. Create design</h3>
+  <nav class="header">
+    <div class="left-section">
+      <p>Home</p>
+    </div>
+    <div class="middle-section">
+      <input class="input" type="text" placeholder="Search">
+    </div>
+    <div class="right-section">
+      <button class="btn-section">Download</button>
+    </div>
+  </nav>
+
+  <h3>12g. Create design</h3>
+  <div class="content">
+    <div class="pet-picture">
+      <img src="picture/download.jfif" alt="">
+    </div>
+    <div class="pet-info">
+      <p class="type">oliver</p>
+      <p class="pet">the cat</p>
+      <p class="rating">Popular</p>
+    </div>
+    <button class="follow">Follow</button>
+  </div>
+  <div class="content">
+    <div class="pet-picture">
+      <img src="picture/images.jfif" alt="">
+    </div>
+    <div class="pet-info">
+      <p class="type">Rex</p>
+      <p class="pet">Happy Bulldog</p>
+      <p class="rating">Popular</p>
+    </div>
+    <button class="follow">Follow</button>
+  </div>
+  <div class="content">
+    <div class="pet-picture">
+      <img src="picture/sleepycat.jpg" alt="">
+    </div>
+    <div class="pet-info">
+      <p class="type">Mimi</p>
+      <p class="pet">Sleepy Cat</p>
+      <p class="rating">Popular</p>
+    </div>
+    <button class="follow">Follow</button>
+
+  </div>
+</body>
+<style>
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 320px;
+    margin-bottom: 10px;
+  }
+
+  .pet-picture {
+    width: 60px;
+  }
+
+  .pet-picture img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .pet-info {
+    flex: 1;
+  }
+
+  .type {
+    font-weight: bold;
+  }
+
+  .pet {
+    color: rgb(96, 96, 96);
+  }
+
+  .rating {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+  }
+
+  .pet-info p {
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 5px 8px;
+  }
+
+  .follow {
+    background-color: rgb(50, 150, 225);
+    font-size: 16px;
+    font-family: Verdana;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color .4s ease-in, padding .9s;
+  }
+
+  .follow:hover {
+    background-color: white;
+    color: rgb(50, 150, 225);
+    border: 1px solid rgb(50, 150, 225);
+    padding: 10px 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .header {
+    height: 45px;
+    background-color: rgb(162, 111, 209);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left-section {
+    width: 100px;
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 8px;
+  }
+
+  .left-section p {
+    color: white;
+    font-family: Verdana;
+    font-weight: 500;
+
+  }
+
+  .middle-section {
+    flex: 1;
+
+    max-width: 500px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .input {
+    width: 85%;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+  }
+
+  .right-section {
+    /* background-color: lightblue; */
+    margin-right: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .btn-section {
+    padding: 7px 15px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: rgb(162, 111, 209);
+    cursor: pointer;
+    transition: background-color 2s, color 5s;
+  }
+
+  .btn-section:hover {
+    background-color: white;
+    color: rgb(162, 111, 209);
+  }
+</style>
+
+
+
+
+
+
+
+<style>
+  .container {
+    width: 300px;
+    border: 1px solid gray;
+    padding: 5px;
+
+  }
+
+  p {
+    margin: 0;
+    font-family: Verdana;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9px;
+    cursor: pointer;
+  }
+</style>
+
+</html>

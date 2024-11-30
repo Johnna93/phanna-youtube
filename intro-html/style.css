@@ -1,0 +1,48 @@
+p {
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.bi-youtube {
+  margin-bottom: 10px;
+}
+.video-title {
+  font-weight: bold;
+  font-size: 18px;
+  width: 300px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.video-stats {
+  font-size: 14px;
+  color: #606060;
+  margin-bottom: 20px;
+}
+.video-author {
+  font-size: 14px;
+  color: #606060;
+  margin-bottom: 20px;
+}
+.video-desciption {
+  font-size: 14px;
+  color: #606060;
+  width: 280px;
+  margin-bottom: 70px;
+  line-height: 20px;
+}
+.shop {
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  padding: 18px 0;
+  background-color: #e34140;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+.span-link {
+  cursor: pointer;
+}
+.span-link:hover {
+  text-decoration: underline;
+}

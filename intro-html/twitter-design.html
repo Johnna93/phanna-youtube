@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter</title>
+  <style>
+    p {
+      font-family: Arial;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-bottom: 4px;
+    }
+
+    .contain {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 15px;
+      width: 380px
+    }
+
+    .left-sidebar {
+      width: 50px;
+      margin-left: 9px;
+    }
+
+    .profile-picture {
+      width: 100%;
+      border-radius: 100%;
+    }
+
+    .right-sidebar {
+      width: 300px;
+    }
+
+    .el--1 {
+      display: flex;
+    }
+
+    .promote {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .time {
+      font-size: 14px;
+      color: grey;
+      margin-left: 5px;
+    }
+
+    .sales {
+      font-size: 14px;
+    }
+
+    .youtube {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      border: 1px solid rgb(214, 214, 214);
+      border-radius: 20px;
+      width: 305px;
+      margin-right: 40px;
+      margin-top: 20px;
+      flex-shrink: 0;
+    }
+
+    .left-side {
+      width: 150px;
+      height: 100px;
+      background-color: rgb(214, 214, 214);
+      border-radius: 20px 0 0 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .rigt-side {
+      cursor: pointer;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contain">
+    <div class="container">
+      <div class="left-sidebar">
+        <img class="profile-picture"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEg01jlYlf6elqkXnIGFugnc3P027Jmc39ow&s"
+          alt="channel-profile" />
+      </div>
+      <div class="right-sidebar">
+        <div class="el--1">
+          <p class="promote">supersimple.dev</p>
+          <p class="time">@SuperSimpleDev</p>
+        </div>
+        <p class="sales">What is backend web development? A complete overview. New video is up!</p>
+      </div>
+    </div>
+    <div class="youtube">
+      <div class="left-side">
+      </div>
+      <div class="rigt-side">
+        <p style="font-size: 14px; color: grey;">youtube.com</p>
+        <p style="font-size: 14px;">Backend web development - a complete overview (2021)</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
